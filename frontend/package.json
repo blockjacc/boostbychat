@@ -1,0 +1,30 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "tw": "tailwindcss"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.2",
+    "axios": "^1.9.0",
+    "solana-wallets-vue": "^0.7.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.7",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vue-tsc": "^2.2.8"
+  },
+  "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538"
+}
