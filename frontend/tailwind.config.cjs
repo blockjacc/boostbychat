@@ -7,7 +7,7 @@ module.exports = {
         primary:   '#29587c',
         secondary: '#513270',
         accent:    '#26e8e3',
-        logo:      '#5be3c2',
+        logo:      '#5be3c2',     // ← your bg-logo utility
       },
     },
   },

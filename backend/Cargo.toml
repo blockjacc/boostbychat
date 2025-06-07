@@ -1,20 +1,22 @@
 [package]
-name = "backend"
+name    = "backend"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-# ── async runtime & web ───────────────────────────
-tokio      = { version = "1.37", features = ["full"] }
-axum       = "0.7"
-tower-http = { version = "0.5", features = ["cors"] }
-hyper      = "1"          # pulled by axum; explicit for clarity
+# ── async runtime & web stack ─────────────────────────────────────
+tokio       = { version = "1.37", features = ["full"] }
+axum        = "0.7"
+tower-http  = { version = "0.5", features = ["cors"] }
+hyper       = "1"
 
-# ── database (MySQL) ─────────────────────────────
-sqlx = { version = "0.7", features = ["mysql", "runtime-tokio-rustls", "macros"] }
+# ── database (MySQL via SQLx) ────────────────────────────────────
+sqlx        = { version = "0.7", features = ["mysql", "runtime-tokio-rustls", "macros"] }
 
-# ── utils ────────────────────────────────────────
-serde      = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-dotenvy    = "0.15"
-anyhow     = "1.0"
+# ── utilities ────────────────────────────────────────────────────
+serde       = { version = "1", features = ["derive"] }
+serde_json  = "1"
+dotenvy     = "0.15"
+anyhow      = "1"
+tracing     = "0.1"
+tracing-subscriber = "0.3"
